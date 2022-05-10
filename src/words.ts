@@ -323,8 +323,8 @@ export const answers = [
     "badge",
     "midst",
     "canny",
-    "fetus",
-    "butch",
+    "shine",
+    "gecko",
     "farce",
     "slung",
     "tipsy",
@@ -382,18 +382,15 @@ export const answers = [
     "sever",
     "field",
     "fluff",
-    "flack",
     "agape",
     "voice",
     "stead",
-    "stalk",
     "berth",
     "madam",
     "night",
     "bland",
     "liver",
     "wedge",
-    "augur",
     "roomy",
     "wacky",
     "flock",
@@ -435,7 +432,6 @@ export const answers = [
     "woven",
     "needy",
     "clown",
-    "widow",
     "irony",
     "ruder",
     "gauze",
@@ -2247,8 +2243,6 @@ export const answers = [
     "undid",
     "intro",
     "basal",
-    "shine",
-    "gecko",
     "rodeo",
     "guard",
     "steer",
@@ -2307,7 +2301,13 @@ export const answers = [
     "unset",
     "unlit",
     "vomit",
-    "fanny"
+    "fanny",
+    "fetus",
+    "butch",
+    "stalk",
+    "flack",
+    "widow",
+    "augur"
 ];
 
 export const words = [
@@ -7171,6 +7171,7 @@ export const words = [
     "kopje",
     "koppa",
     "korai",
+    "koran",
     "koras",
     "korat",
     "kores",
@@ -9604,6 +9605,7 @@ export const words = [
     "quoll",
     "quonk",
     "quops",
+    "quran",
     "qursh",
     "quyte",
     "rabat",
@@ -12975,3 +12977,5 @@ export const words = [
     "zymes",
     "zymic"
 ];
+
+export const allWords = words.concat(answers);
