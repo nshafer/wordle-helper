@@ -16,6 +16,10 @@ import { settings, loadSettings } from './settings';
 // Load settings once when the main app is mounted
 onMounted(() => {
     loadSettings();
+    if (settings.firstRun) {
+        openModal('help');
+        settings.firstRun = false;
+    }
 });
 
 // Update the class on <body> whenever the darkMode setting changes

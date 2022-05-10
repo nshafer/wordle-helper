@@ -4,6 +4,7 @@ import { reactive,  watch } from 'vue';
 
 // Exported settings and default value
 export const settings: {[name: string]: any} = reactive({
+    firstRun: true,
     darkMode: false,
     colorBlind: false,
 });

@@ -6,7 +6,7 @@ defineEmits(['close']);
 </script>
 
 <template>
-    <Modal v-show="visible" @close="$emit('close')" title="Help / About">
+    <Modal v-show="visible" @close="$emit('close')" title="Wordle-Helper.app">
         <template #body>
             <p>
                 Wordle is an excellent game, but sometimes you just get stuck and can't think of any words to try next.
@@ -37,12 +37,25 @@ defineEmits(['close']);
                 those in and just get more information on what letters might or might not be in the answer.
             </p>
 
-            <p class="pt-3 bt-1">
-                Wordle is © 2022 The New York Times Company.
+            <small class="text-muted">
+                <p class="mt-5 pt-3 bt-1 mb-1">
+                    Wordle is © 2022 The New York Times Company.
+                </p>
+                    
+                <p class="mb-1">
+                    This App / Website is the product of wordle-helper.app which has no
+                    affiliation with Wordle or The New York Times Company.
+                </p>
+            </small>
+        </template>
+
+        <template #footer>
+            <small>
+                <p class="mb-1">
+                    © 2022 Wordle-Helper.app
+                </p>
                 
-                This App / Website is the product of wordle-helper.app which has no
-                affiliation with Wordle or The New York Times Company.
-            </p>
+            </small>
         </template>
     </Modal>
 </template>
