@@ -146,7 +146,7 @@ export default defineComponent({
             </div>
 
             <div class="section__body">
-                <p class="text-center">Input each green letter, in the position it is in.</p>
+                <p class="help-text">Input each green letter, in the position it is in.</p>
 
                 <div class="inputs chars green">
                     <input :value="green1" @input="updateLetter('green1', $event)" class="input char green" maxlength="1" type="text" spellcheck="false" @click="selectAll" />
@@ -167,7 +167,7 @@ export default defineComponent({
             </div>
 
             <div class="section__body">
-                <p class="text-center">Input any yellow letters, in the position they are in.</p>
+                <p class="help-text">Input any yellow letters, in the position they are in.</p>
 
                 <div class="inputs chars yellow">
                     <input :value="yellow1" @input="updateLetter('yellow1', $event)" class="input chars yellow" maxlength="4" type="text" name="yellow1" spellcheck="false" @click="cursorEnd" />
@@ -188,7 +188,7 @@ export default defineComponent({
             </div>
 
             <div class="section__body">
-                <p class="text-center">Input all gray letters currently visible.</p>
+                <p class="help-text">Input all gray letters currently visible.</p>
                 
                 <div class="inputs line gray">
                     <input :value="gray" @input="updateLetter('gray', $event)"  class="input line gray" maxlength="26" type="text" name="grays" spellcheck="false" @click="cursorEnd" />
@@ -226,6 +226,13 @@ export default defineComponent({
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-around;
+    padding: 0.25em 0.5em;
+}
+
+.help-text {
+    text-align: center;
+    display: none;
+    margin: 0.5em 0;
 }
 
 .inputs {
@@ -293,6 +300,17 @@ export default defineComponent({
 @media screen and (min-width: 30em) {
     .input {
         font-size: 1.7em;
+    }
+}
+
+@media screen and (min-height: 36em) {
+    .help-text {
+        display: block;
+        margin: auto 0 .5em;
+    }
+
+    .inputs {
+        margin-bottom: auto;
     }
 }
 
