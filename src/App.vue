@@ -305,6 +305,18 @@ strong {
     margin-top: auto !important;
 }
 
+.mb-a {
+    margin-bottom: auto !important;
+}
+
+.ml-a {
+    margin-left: auto !important;
+}
+
+.mr-a {
+    margin-right: auto !important;
+}
+
 .mt-3 {
     margin-top: 1em !important;
 }
@@ -331,6 +343,30 @@ strong {
 
 .mb-5 {
     margin-bottom: 2em !important;
+}
+
+.ml-1 {
+    margin-left: .25em !important;
+}
+
+.ml-2 {
+    margin-left: .5em !important;
+}
+
+.ml-3 {
+    margin-left: 1em !important;
+}
+
+.mr-1 {
+    margin-right: .25em !important;
+}
+
+.mr-2 {
+    margin-right: .5em !important;
+}
+
+.mr-3 {
+    margin-right: 1em !important;
 }
 
 .pt-3 {

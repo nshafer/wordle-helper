@@ -3,6 +3,7 @@ import { computed } from 'vue';
 
 import Modal from './Modal.vue';
 import { settings } from '../settings';
+import GitHub from './icons/GitHub.vue';
 
 defineProps(['visible']);
 defineEmits(['close']);
@@ -13,7 +14,7 @@ const version = computed(() => {
 </script>
 
 <template>
-    <Modal v-show="visible" @close="$emit('close')" title="Help / About">
+    <Modal v-show="visible" @close="$emit('close')" title="Settings">
         <template #body>
             <div class="settings">
                 <div class="setting">
@@ -69,7 +70,10 @@ const version = computed(() => {
 
         <template #footer>
             <small>© 2022 Wordle-Helper.app</small>
-            <small>{{ version }}</small>
+                <small class="ml-a">{{ version }}</small>
+                <a class="button icon lg ml-2" href="https://github.com/nshafer/wordle-helper" target="__blank">
+                    <GitHub />
+                </a>
         </template>
     </Modal>
 </template>
